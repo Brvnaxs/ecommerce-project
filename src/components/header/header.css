@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border-bottom: 1px solid #C2C2C2;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    padding: 0 10px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #141414;
+    margin-right: 92px;
+}
+
+.Header button {
+    color: #ffff;
+    background-color: #CB9C8F;
+    margin-right: 129px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    height: 39.49px;
+    width: 167px;
+    border-radius: 200px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 40%;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #141414;
+}
+
+.search {
+    height: 29px;
+    width: 295px;
+    background-color: #CCC9C9;
+    display: flex;
+    align-items: center;
+    border-radius: 23px;
+    padding: 5px;
+    opacity: 0.4;
+    margin-right: 5px;
+}
+
+.search input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.fav {
+    margin-right: 2px;
+}
+
+.favs-car {
+    display: flex;
+    padding: 2px;
+}
