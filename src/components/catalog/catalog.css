@@ -1,0 +1,41 @@
+.categorias{
+    display: flex;
+    align-self: center;
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: 'Cabin';
+    text-align: center;
+    border-top: 1px solid #C2C2C2;
+    border-bottom: 1px solid #C2C2C2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.categorias img{
+    width: 466px;
+    height: 318px;
+}
+.categorias span{
+    font-weight: bolder;
+    justify-self: center;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.catalogo li{
+    color: #858585;
+    font-size: 1rem;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+    
+}
+.catalogo li:hover{
+    border-bottom: solid 1px #CB9C8F;
+    font-weight: bold;
+}

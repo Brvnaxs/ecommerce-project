@@ -9,7 +9,7 @@ import "./banner.css";
 
 export default function Banner(){
     return(
-            <Swiper className="Banner" modules={[Autoplay]} autoplay={{delay:1800}}>
+            <Swiper className="Banner" modules={[Autoplay]} autoplay={{delay:5000}}>
                 <SwiperSlide className="banner-itens">
                     <img src={banner1} alt="" />
                 </SwiperSlide>
