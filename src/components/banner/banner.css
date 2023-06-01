@@ -3,6 +3,7 @@
     justify-content: center;
     height: fit-content;
     margin-top: 30px;
+    cursor: grab;
 }
 .banner-itens{
     display: flex;

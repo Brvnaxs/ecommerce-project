@@ -1,4 +1,17 @@
-.categorias{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+.title{
+    font-size: 25px;
+    font-family: 'Cabin';
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+.Catalog{
     display: flex;
     align-self: center;
     width: 90%;
@@ -11,11 +24,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.categorias img{
+.Catalog img{
     width: 466px;
     height: 318px;
 }
-.categorias span{
+.Catalog span{
     font-weight: bolder;
     justify-self: center;
     margin-bottom: 8px;
@@ -26,16 +39,17 @@
     flex-direction: column;
     text-align: center;
 }
-.catalogo li{
+.Catalog li{
     color: #858585;
     font-size: 1rem;
     align-self: center;
     text-align: center;
     margin-bottom: 8px;
     cursor: pointer;
+    text-transform: capitalize;
     
 }
-.catalogo li:hover{
+.Catalog li:hover{
     border-bottom: solid 1px #CB9C8F;
     font-weight: bold;
 }

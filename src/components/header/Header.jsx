@@ -1,9 +1,11 @@
-import { React, useState } from "react";
+import { React, useContext, useState } from "react";
 import { HiSearch, HiOutlineHeart, HiOutlineShoppingCart } from "react-icons/hi";
 
 import "./header.css";
+import { ProductContext } from "../Context/ProductContext";
 
 export default function Header() {
+    const {produto, setProduto} = useContext(ProductContext)
     return (
         <div className="Header">
             <span className='logo'>GHATS</span>
@@ -20,6 +22,7 @@ export default function Header() {
             <div className='favs-car'>
                 <HiOutlineHeart className='icon' />
                 <HiOutlineShoppingCart className='icon' />
+                <span className="itens">{produto}</span>
             </div>
         </div>
     )

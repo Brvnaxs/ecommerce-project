@@ -6,16 +6,20 @@
     border: 1px solid #C2C2C2;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 2px;
+    margin: 10px;
     font-family: 'Cabin', sans-serif;
 }
 
-.Card img {
+.Card img{
     height: 70%;
-    width: 80%;
-    margin-bottom: 5px;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .Card h1 {
@@ -32,7 +36,7 @@
 .Card button {
     color: #ffff;
     background-color: #CB9C8F;
-    margin-right: 129px;
+  
     font-weight: 700;
     font-size: 0.75rem;
     height: 39.49px;
@@ -41,6 +45,7 @@
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+    align-self: center;
 }
 
 .Card button:hover {
