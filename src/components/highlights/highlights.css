@@ -24,3 +24,10 @@
     border-bottom: 1px solid #C2C2C2;
     padding-top: 10px;
 }
+
+.loading {
+    align-self: center;
+    margin: 150px 0px ;
+    font-family: 'Cabin';
+    font-size: 34px;
+}

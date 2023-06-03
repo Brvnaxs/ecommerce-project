@@ -1,6 +1,6 @@
 import { React, useContext, useState } from "react";
 import { HiSearch, HiOutlineHeart, HiOutlineShoppingCart } from "react-icons/hi";
-
+import ft from "../../assets/logo.png"
 import "./header.css";
 import { ProductContext } from "../Context/ProductContext";
 
@@ -8,7 +8,10 @@ export default function Header() {
     const {produto, setProduto} = useContext(ProductContext)
     return (
         <div className="Header">
+            <div className="logo-container">
+            <img src={ft} alt="" />
             <span className='logo'>GHATS</span>
+            </div>
             <button>Dicas para casa</button>
             <div className='menu'>
                 <span>catálogo</span>

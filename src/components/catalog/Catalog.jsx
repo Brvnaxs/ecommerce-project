@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import image1 from "../../assets/catalog1.png"
 import image2 from "../../assets/catalog2.png"
 import "./catalog.css";
+import { UrlContext } from "../Context/UrlContext";
 
 export default function Catalog() {
+    const {url, ChangeUrl} = useContext(UrlContext)
     const [categories, setCategories] = useState([])
-    const url = 'https://json-api-production-2f8d.up.railway.app/produtos/categorias'
     useEffect(() => {
-        fetch(url)
+        fetch("https://json-api-production-2f8d.up.railway.app/produtos/categorias")
             .then(res => res.json())
-            .then(res => {
+            .then( res => {
                 setCategories(res)
             })
     }, [])
@@ -25,7 +26,7 @@ export default function Catalog() {
                     {
                         categories.map(item => {
                             return (
-                                <li key={item}>{item}</li>
+                                <li key={item} onClick={() => ChangeUrl(item)}>{item}</li>
                             )
                         })
                     }

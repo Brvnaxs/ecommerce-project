@@ -1,23 +1,28 @@
-import {React, useState, useEffect} from "react";
+import {React, useState, useEffect, useContext} from "react";
 import Card from "../product-card/Card"
 import "./highlights.css"
+import { UrlContext } from "../Context/UrlContext";
 
 export default function Highlights(){
+    const {url, ChangeUrl} = useContext(UrlContext)
     const [products, setProducts] = useState([])
-    const url = 'https://json-api-production-2f8d.up.railway.app/produtos'
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
             .then(res => {
-                console.log(res)
                 setProducts(res)
                 
             })
-    }, [])
+    }, [url])
+    if(!products || products == null){
+        return(
+            <h2 className="loading">Carregando...</h2>
+        )
+    }
     return(
         <div className="container">
             <h1 className="title">Destaques</h1>
-            <div className="Highlights">
+              <div className="Highlights">
                 {
                     products.map(produto => {
                         return(
@@ -29,7 +34,7 @@ export default function Highlights(){
                         )
                     })
                 }
-            </div>
+            </div> 
         </div>
     )
 }

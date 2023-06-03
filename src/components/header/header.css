@@ -75,3 +75,12 @@
     display: flex;
     padding: 2px;
 }
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img{
+    margin-right: 5px;
+}
